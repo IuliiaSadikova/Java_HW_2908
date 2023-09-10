@@ -1,0 +1,32 @@
+### add new customer
+POST localhost:8080/customer
+Content-Type: application/json
+
+{
+    "name": "John"
+}
+
+### get all customers
+GET localhost:8080/customer
+
+### add new product
+POST localhost:8080/product
+Content-Type: application/json
+
+{
+  "code": "152",
+  "label": "Milka",
+  "price": 1.1
+}
+
+### get all products
+GET localhost:8080/product
+
+### add a product to cart
+POST localhost:8080/customer/1/cart/product
+Content-Type: application/json
+
+1
+
+### get cart ammount
+GET localhost:8080/customer/1/cart/amount
